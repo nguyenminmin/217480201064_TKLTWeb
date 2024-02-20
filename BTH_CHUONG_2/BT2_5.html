@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thể thao</title>
+</head>
+<body>
+    <table style="width: 100%">
+        <tr style="text-align: center; font-size: 25px;">
+            <th>TRƯỜNG ĐẠI HỌC BẠC LIÊU</th>
+            <th>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</th>
+
+        </tr>
+        <tr style="text-align: center;">
+            <th>KHOA CÔNG NGHỆ THÔNG TIN</th>
+            <th>Độc lập - Tự do - Hạnh phúc</th>
+
+        </tr>
+
+    </table>
+    <p style="font-family: Verdana;font-size: 20px;font-weight: bold;color: red;text-align: center;">PHIẾU ĐĂNG KÝ DỰ THI THỂ THAO</p>
+    <form method="POST" action="">
+        <div style="padding-left: 50px;">
+        <p>Họ tên:
+            <input type="text" name="HoTen" size="30" max="50">
+        </p>
+        <p>Mật khẩu:
+            <input type="text" name="MatKhau" size="20" max="30">
+        </p>
+        </div>
+        <p style="font-weight: bold;margin-bottom: 0;margin-top: 0;">Môn thể thao</p>
+        <pre style="margin-bottom: 0;margin-top: 0; font-family: Times New Roman;margin-bottom: 0;margin-top: 0;">
+<input type="checkbox" name="BongDa" value="1">Bóng đá
+<input type="checkbox" name="BongChuyen" value="2">Bóng chuyền
+<input type="checkbox" name="DienKinh" value="3">Điền kinh
+<input type="checkbox" name="BoiLoi" value="4">Bơi lội
+        </pre>
+        </p>
+        <hr size="5", color="black">
+        <p style="font-family: Verdana;font-size: 20px;color: red;text-align: center;margin-bottom: 0;margin-top: 0;">PHẦN CỨNG MÁY TÍNH</p>
+        <hr size="3", color="black">
+        <p style="font-family: 'Times New Roman';font-weight: bold;margin-bottom: 0;margin-top: 0; font-size: 20px;">Thiết bị:<br>
+            <select size="4" name="ThietBi" multiple>
+                <option value="CPU">CPU</option>
+                <option value="Mainboard">Mainboard</option>
+                <option value="ASUDVD">ASU DVD</option>
+                <option value="RAMKMax">RAM KingMax</option>
+                <option value="HDD">Hard Disk</option>
+                <option value="Monitor">Monitor</option>
+            </select>
+        </p>
+        <br>
+        <p style="font-family: 'Times New Roman';font-weight: bold;margin-bottom: 0;margin-top: 0; font-size: 20px;">Thời gian bảo hành: <br>
+            <select size="1" name="ThietBi">
+                <option value="1">1 năm </option>
+                <option value="2">2 năm </option>
+                <option value="3">3 năm </option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="submit" value="Reset">
+            </p>
+    </form>
+</body>
+</html>
