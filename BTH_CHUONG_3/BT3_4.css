@@ -1,0 +1,28 @@
+table, th, td{
+    border:1px solid black;
+}
+table{
+    border-collapse:collapse;
+}
+th, td {  
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 14px;
+}
+#tencot{
+    background-color: aquamarine;
+    font-weight: bold;
+}
+#sangcn{
+    background-color: aquamarine;
+}
+#chieucn{
+    background-color: aquamarine;
+}
+#sang{
+    background-color: darkorchid;
+}
+#chieu{
+    background-color: darkorchid;
+}

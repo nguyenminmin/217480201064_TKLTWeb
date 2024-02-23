@@ -1,0 +1,101 @@
+.container{
+    background-color: rgb(118, 104, 104);
+}
+
+#menu{
+    display: inline-block;
+    padding: 0  0 ;
+    color: #fff;
+}
+#menu, .khoahoc{
+    list-style-type: none;
+}
+
+#khoahocne {
+    display: none;
+}
+
+#menu > li  {
+    display: inline-block;
+    padding: 14px 20px;
+}
+
+#menu li {
+    position: relative;
+}
+
+#menu > li > a{
+    background-color:  rgb(121, 112, 112);
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none
+}
+
+#nav li {
+    text-decoration: none;
+    line-height: 46px;
+    padding:  0 24px;
+    display: block;
+}
+
+#menu li:hover .khoahoc {
+    display: block;
+}
+
+#menu > li:hover  {
+    color: black;
+    background-color: rgb(126, 123, 98);
+}
+
+#menu .khoahoc {
+    display: none;
+    min-width: 160px;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#menu .khoahoc {
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#khoahoc:hover #khoahocne {
+    display: none;
+}
+
+/*
+#menu li {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu ul li {
+    background-color: #333;
+    padding: 8px;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 8px;
+}
+
+#menu li:hover > ul {
+    display: inherit;
+} */

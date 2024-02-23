@@ -1,0 +1,17 @@
+#hang1{
+    text-align: left;
+}
+table{
+    
+    border-collapse:collapse;
+}
+#gt, #tt, #dt, #tkb, #lt, #pcn, #ck{
+    background-color: darkkhaki;
+    font-weight: bold;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+#gttt, #trungtam, #a, #b, #c, #d, #e{
+    background-color: aquamarine;
+    padding-left: 10px;
+}

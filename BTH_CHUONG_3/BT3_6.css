@@ -1,0 +1,33 @@
+body{
+    background-color: yellow;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+ol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+}
+
+ul{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+#d1{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+}
+
+#lenh{
+    list-style: square;
+}
+
+#can{
+    list-style: disc;
+}

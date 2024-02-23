@@ -1,0 +1,49 @@
+pre{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#p1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+}
+
+#namthu1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 13px;
+}
+
+#namthu2{
+    list-style: square;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 13px;
+}
+
+#namthu3{
+    list-style: disc;
+    color: black;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#totnghiep{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-style: italic;
+
+}
+
+#montotnghiep{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 80px;
+}
