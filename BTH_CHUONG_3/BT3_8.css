@@ -1,101 +1,98 @@
-.container{
-    background-color: rgb(118, 104, 104);
+.menu {
+    background-color: gray;
+    padding: 0;
 }
-
-#menu{
-    display: inline-block;
-    padding: 0  0 ;
-    color: #fff;
-}
-#menu, .khoahoc{
+.menu .menuphu{
     list-style-type: none;
 }
 
-#khoahocne {
-    display: none;
-}
-
-#menu > li  {
+.menu > li {
     display: inline-block;
-    padding: 14px 20px;
 }
 
-#menu li {
+.menu li {
     position: relative;
 }
 
-#menu > li > a{
-    background-color:  rgb(121, 112, 112);
+.menu>li>a{
+    color: white ;
     text-transform: uppercase;
-    color: #fff;
-    text-decoration: none
 }
 
-#nav li {
+.menu li a{
     text-decoration: none;
     line-height: 46px;
-    padding:  0 24px;
+    padding: 0 24px;
     display: block;
 }
 
-#menu li:hover .khoahoc {
+.menu li:hover .menuphu {
     display: block;
 }
 
-#menu > li:hover  {
-    color: black;
-    background-color: rgb(126, 123, 98);
-}
-
-#menu .khoahoc {
-    display: none;
-    min-width: 160px;
+.menu > li:hover > a {
     background-color: #fff;
-    position: absolute;
+    color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#menu .khoahoc {
-    color: black;
-    padding: 0 12px;
-    line-height: 38px;
+.menu .menuphu {
+    display: none;
+    min-width: 180px;
+    background-color: gray;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding: 0;
+
 }
 
+.menuphu > li{
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+}
 
-#menu {
-    list-style-type: none;
-    margin: 0;
+.menuphu li:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menuphu li:hover .menuphuphu {
+    display: block;
+    border: 1px solid black;
+    padding: 0;
+    left: 100%;
+    color: white;
+    
+}
+
+.menuphu > li:hover > a {
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.menuphuphu{
+    display: none;
+    position: absolute;
+    width: 200px;
+    left: 100%;
+    top: -1px;
+    background-color: grey;
     padding: 0;
 }
 
-#khoahoc:hover #khoahocne {
-    display: none;
-}
-
-/*
-#menu li {
-    display: inline-block;
+.menuphuphu > li{
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    display: block;
+    border: 1px solid black;
 }
 
-#menu ul {
-    list-style-type: none;
+.menuphuphu li:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-#menu ul li {
-    background-color: #333;
-    padding: 8px;
-}
-
-#menu ul ul {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    padding: 8px;
-}
-
-#menu li:hover > ul {
-    display: inherit;
-} */

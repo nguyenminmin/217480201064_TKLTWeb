@@ -1,3 +1,4 @@
+/* cách 1
 #hang1{
     text-align: left;
 }
@@ -13,5 +14,52 @@ table{
 }
 #gttt, #trungtam, #a, #b, #c, #d, #e{
     background-color: aquamarine;
+    padding-left: 10px;
+}
+
+cách 2
+table, th, td{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+.hihi{
+    background-color:bisque;
+}
+.haha{
+    background-color: aqua;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+cách 3 */
+.hopto{
+    background-color:  darkorchid;
+    width: 170vh;
+    height: 135px;
+}
+
+.hoptrai{
+    float: left;
+    background-color: aquamarine;
+    height: 135px;
+    width: 20vh;
+    padding-left: 10px;
+}
+
+.hopphai{
+    float: left;
+    background-color: darkorchid;
+    height: 135px;
+    width: 139vh;
     padding-left: 10px;
 }
