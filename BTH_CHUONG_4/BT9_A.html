@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "JavaScript">
+        var soluong, x;
+        var ds = new Array(50);
+        soluong = prompt("Nhập vào số sinh viên");
+        for ( i = 0; i< soluong; i++){
+            ds[i] = prompt("Nhập vào họ tên của sinh viên: ");
+        }
+        ds.sort();
+        document.write("<h1>DANH SÁCH SINH VIÊN ĐÃ SẮP XẾP</h1>");
+        for ( x in ds){
+            document.write(ds[x]);
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
