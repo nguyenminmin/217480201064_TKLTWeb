@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hãy nhập vào hai số và thực hiện phép tính </h2>
+    <p>Số hạng 1: </p>
+    <input type="text" name="SoHang1">
+    <br> <br>
+    <p>Số hạng 2: </p>
+    <input type="text" name="SoHang2">
+    <br> <br> 
+    <p>Kết quả: </p>
+    <input type="text" name="KetQua" readonly>
+    <br><br>
+    <input type="radio" name="PhepTinh" value="Cong"> Cộng
+    <input type="radio" name="PhepTinh" value="Tru"> Trừ
+    <input type="radio" name="PhepTinh" value="Nhan"> Nhân
+    <input type="radio" name="PhepTinh" value="Chia"> Chia
+    <input type="button" value="Tính" onclick="Tinh()">
+    <script>
+        function LayGiaTriPhepToan()
+        {
+            var radio = document.getElementsByName('PhepTinh');
+            for (var i = 0; i < radio.length; i++) {
+                if (radio[i].checked) {
+                    return radio[i].value;
+                }
+            }
+            return null;
+        }
+
+        function Tinh()
+        {
+            var So1 = parseFloat(document.getElementsByName('SoHang1')[0].value);
+            var So2 = parseFloat(document.getElementsByName('SoHang2')[0].value);
+            var KQ = document.getElementsByName('KetQua')[0];
+            var PhepToan = LayGiaTriPhepToan();
+
+            if (isNaN(So1) || isNaN(So2)) {
+                KQ.value = "Nhập vào số hợp lệ";
+                return;
+            }
+
+            switch (PhepToan)
+            {
+                case 'Cong': KQ.value = So1 + So2;
+                break;
+                case 'Tru': KQ.value = So1 - So2;
+                break;
+                case 'Nhan': KQ.value = So1 * So2;
+                break;
+                case 'Chia': 
+                    if (So2 ===0)
+                    {
+                        KQ.value = "Không thể chia cho 0";
+                    }
+                    else
+                    {
+                        KQ.value = So1 / So2;
+                    }
+                break;
+                default: KQ.value = "Chọn phép toán";
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

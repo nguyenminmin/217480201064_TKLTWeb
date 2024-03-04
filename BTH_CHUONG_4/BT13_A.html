@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hãy nhập vào hai số và click vào nút Tính tổng</h2>
+    <input type="text" name="Sohang1"> + 
+    <input type="text" name="Sohang2"> =
+    <input type="text" name="KetQua">
+    <input type="button" value="Tính tổng" onclick="document.getElementsByName('KetQua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) + parseFloat(document.getElementsByName('Sohang2')[0].value)">
+</body>
+</html>

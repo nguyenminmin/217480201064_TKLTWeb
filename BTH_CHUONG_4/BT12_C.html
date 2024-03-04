@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="Ho">Họ:</label>
+        <input type="text" name="Ho" value="Họ">
+        <br> <br>
+        <label for="Ten">Tên:</label>
+        <input type="text" name="Ten" value="Tên">
+        <br> <br>
+        <input type="button" name="HienThi" value="Hiển thị" onclick="hienThiHoTen()">
+        <br> <br>
+        <label for="Hoten">Họ và tên:</label>
+        <input type="text" name="Hoten" value="Họ và tên" readonly>
+    </form>
+
+    <script>
+        function hienThiHoTen() {
+            var hoValue = document.getElementsByName("Ho")[0].value;
+            var tenValue = document.getElementsByName("Ten")[0].value;
+            
+            var hoTenValue = hoValue + ' ' + tenValue;
+            
+            document.getElementsByName("Hoten")[0].value = hoTenValue;
+        }
+    </script>
+</body>
+</html>

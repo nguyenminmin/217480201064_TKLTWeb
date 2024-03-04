@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay đổi thuộc tính của trang web</title>
+</head>
+
+<body>
+    <h2>Nhập vào các giá trị và nhấn nút Thay đổi</h2>
+    <input type="text" id="TieuDe" value="Tiêu đề mới">
+    <br> <br>
+    <input type="text" id="MauNen" value="" placeholder="Nhập màu nền vào đây"><br><br>
+    <input type="text" id="MauChu" value="Nhập màu chữ vào đây"> <br><br>
+    <input type="text" id="TrangThai" value="Nhập dòng trạng thái vào đây"><br><br>
+    <input type="button" value="Thay đổi" onclick="CapNhat();">
+
+    <script>
+        function CapNhat() {
+            var tieuDe = document.getElementById('TieuDe').value;
+            var mauNen = document.getElementById('MauNen').value;
+            var mauChu = document.getElementById('MauChu').value;
+            var trangThai = document.getElementById('TrangThai').value;
+
+            document.title = tieuDe;
+            document.body.style.backgroundColor = mauNen;
+            document.body.style.color = mauChu;
+            window.defaultStatus = trangThai;
+        }
+    </script>
+</body>
+</html>

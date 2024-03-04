@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hãy nhập vào hai số và thực hiện phép tính </h2>
+    <p>Số hạng 1: </p>
+    <input type="text" name="Sohang1">
+    <br> <br>
+    <p>Số hạng 2: </p>
+    <input type="text" name="Sohang2">
+    <br> <br> 
+    <p>Kết quả: </p>
+    <input type="text" name="KetQua">
+    <br><br>
+    <input type="button" value="Tính tổng" onclick="document.getElementsByName('KetQua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) + parseFloat(document.getElementsByName('Sohang2')[0].value)">
+    <input type="button" value="Tính hiệu" onclick="document.getElementsByName('KetQua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) - parseFloat(document.getElementsByName('Sohang2')[0].value)">
+    <input type="button" value="Tính tích" onclick="document.getElementsByName('KetQua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) * parseFloat(document.getElementsByName('Sohang2')[0].value)">
+    <input type="button" value="Tính thương" onclick="document.getElementsByName('KetQua')[0].value = parseFloat(document.getElementsByName('Sohang1')[0].value) / parseFloat(document.getElementsByName('Sohang2')[0].value)">
+</body>
+</html>
