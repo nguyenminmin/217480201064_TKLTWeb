@@ -6,18 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <script language = JavaScript >
-        function DoiMau()
+    <script language = "JavaScript" >
+        function DoiMau(Mau)
         {
             document.bgColor = Mau.value;
         }
     </script>
     <p>Bạn hãy chọn màu nền</p>
 
-    <input type="radio" name="Mau" id="MauXanh" value="green" onchange="DoiMau(this.value);"> Màu xanh
-    <input type="radio" name="Mau" id="MauVang" value="yellow" onchange="DoiMau(this.value);"> Màu vàng
-    <input type="radio" name="Mau" id="MauNau" value="brown" onchange="DoiMau(this.value);"> Màu nâu
-    <input type="radio" name="Mau" id="MauTim" value="magenta" onchange="DoiMau(this.value);"> Màu tím
+    <input type="radio" name="Mau" id="MauXanh" value="green" onchange="DoiMau('green');"> Màu xanh
+    <input type="radio" name="Mau" id="MauVang" value="yellow" onchange="DoiMau(this);"> Màu vàng
+    <input type="radio" name="Mau" id="MauNau" value="brown" onchange="DoiMau(this);"> Màu nâu
+    <input type="radio" name="Mau" id="MauTim" value="magenta" onchange="DoiMau(this);"> Màu tím
 
 </body>
 </html>
