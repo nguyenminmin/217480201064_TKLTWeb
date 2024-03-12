@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+        }
+        .dau {
+            width: 20px;
+            height: 20px;
+            margin: 0 20px;
+        }
+
+        .item {
+            margin: 20px;
+            height: 20px;
+            width: 100px;
+            background-color: plum;
+        }
+
+
+    </style>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Nhập số hạng 1" id="SoHang1">
+        <input type="button" class="dau" id="dau_1">
+        <input type="text" placeholder="Nhập số hạng 2" id="SoHang2">
+        <input type="button" class="dau" id="dau_2">
+        <input type="text" placeholder="Kết quả" id="KetQua">
+    </div>
+    <div>
+        <input type="button" value="Cộng" class="item" onclick="Tinh('cong');">
+        <input type="button" value="Trừ" class="item" onclick="Tinh('tru');">
+        <input type="button" value="Nhân" class="item" onclick="Tinh('nhan');">
+        <input type="button" value="Chia" class="item" onclick="Tinh('chia');">
+    </div>
+
+    <script language="Javascript">
+    function Tinh(dau)
+    {
+        let a = parseFloat(SoHang1.value);
+        let b = parseFloat(SoHang2.value);
+        dau_2.value = "=" 
+        if(dau == 'cong') {
+            dau_1.value = "+"
+            KetQua.value = a + b
+        } else if(dau == 'tru') {
+            dau_1.value = "-"
+            KetQua.value = a - b
+        } else if(dau == 'nhan') {
+            dau_1.value = "*"
+            KetQua.value = a * b
+        } else if(dau == 'chia') {
+            dau_1.value = "/"
+            KetQua.value = a / b
+        }
+    }
+    </script>
+</body>
+</html>

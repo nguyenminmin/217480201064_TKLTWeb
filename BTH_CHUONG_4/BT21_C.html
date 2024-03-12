@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        
+        .container {
+            padding: 10px 0px 0px 10px;
+            display: flex;
+        }
+
+        .dau {
+            width: 20px;
+            height: 20px;
+            margin: 0px 20px;
+        }
+
+        .item {
+            margin: 10px 0;
+            height: 20px;
+            width: 100px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="Nhập số hạng 1" id="SoHang1">
+        <pre>   <select name="Tinh" id="operatorSelect" size="1">
+            <option value="+">Cộng</option>
+            <option value="-">Trừ</option>
+            <option value="*">Nhân</option>
+            <option value="/">Chia</option>
+        </select>   </pre>
+        <input type="text" placeholder="Nhập số hạng 2" id="SoHang2">
+        <input type="button" class="dau" id="dau_2" value="=">
+        <input type="text" placeholder="Kết quả" value="" id="KetQua" disabled>
+        <input onclick="Tinh()" type="button" class="dau" value="Tính" style="width: 50px; height: 20px">
+    </div>
+
+    <script>
+        function Tinh() {
+            let a = parseFloat(document.getElementById("SoHang1").value);
+            let b = parseFloat(document.getElementById("SoHang2").value);
+            let operator = document.getElementById("operatorSelect").value;
+            let result = 0;
+
+            switch (operator) {
+                case "+":
+                    result = a + b;
+                    break;
+                case "-":
+                    result = a - b;
+                    break;
+                case "*":
+                    result = a * b;
+                    break;
+                case "/":
+                    result = a / b;
+                    break;
+                default:
+                    result = "Lỗi";
+                    break;
+            }
+
+            document.getElementById("KetQua").value = result;
+        }
+    </script>
+</body>
+
+</html>

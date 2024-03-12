@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: Arial; background-color: lavender;">
+    <h1>Bạn hãy nhập số lượng và giá</h1>
+    Số lượng: <input type="text" id="SoLuong" oninput="updateThanhTien()">
+    Đơn giá: <input type="text" id="DonGia" oninput="updateThanhTien()">
+    <hr>
+    Thành Tiền: <input type="text" id="ThanhTien" readonly>
+    
+    <script>
+        function updateThanhTien() {
+        var soLuong = parseFloat(document.getElementById("SoLuong").value) || 0;
+        var donGia = parseFloat(document.getElementById("DonGia").value) || 0;
+        var thanhTien = soLuong * donGia;
+        document.getElementById("ThanhTien").value = thanhTien;
+        }
+    </script>
+</body>
+</html>

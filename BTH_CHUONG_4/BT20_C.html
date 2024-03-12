@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: Arial; background-color: lavender;">
+    <h1>Bạn hãy nhập số lượng và giá</h1>
+    Họ tên: <input type="text" name="HoTen" >
+    Năm vào làm: <input type="text" id="NamVaoLam" >
+    <br>
+    <br>
+    Hệ số: <input type="text" id="HeSo">
+    Lương cơ sở: <input type="text" id="LuongCoSo">
+    <hr>
+    Lương cơ bản: <input type="text" id="LuongCoBan" readonly>
+    Phụ Cấp: <input type="text" id="PhuCap" readonly>
+    Thâm niên: <input type="text" id="ThamNien" readonly>
+    Thành Tiền: <input type="text" id="ThanhTien" readonly>
+
+    <button onclick="updateThanhTien()">Tính Lương</button>
+
+    <script>
+        function updateThanhTien() {
+            var HeSo = parseFloat(document.getElementById("HeSo").value) || 0;
+            var LuongCoSo = parseFloat(document.getElementById("LuongCoSo").value) || 0;
+            var LuongCoBan = HeSo * LuongCoSo;
+            document.getElementById("LuongCoBan").value = LuongCoBan;
+
+            var PhuCap = 0.25 * LuongCoBan;
+            document.getElementById("PhuCap").value = PhuCap;
+
+            var NamVaoLam = parseInt(document.getElementById("NamVaoLam").value) || 0;
+            var ThamNien = new Date().getFullYear() - NamVaoLam;
+            document.getElementById("ThamNien").value = ThamNien;
+
+            var ThanhTien = LuongCoBan + PhuCap;
+            document.getElementById("ThanhTien").value = ThanhTien;
+        }
+    </script>
+</body>
+</html>
